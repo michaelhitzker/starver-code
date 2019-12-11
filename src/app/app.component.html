@@ -1,20 +1,67 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div class="main">
+  <div class="header-container">
+    <img
+      src="../assets/starver_icon.svg"
+      class="starbucks-versioning-header-img"
+    />
+    <h1 class="header">
+      starbucks versioning
+    </h1>
+  </div>
 
+  <div class="tldr">
+    <h3>tl;dr</h3>
+    <p>Given a version number <code>venti.grande.tall</code>, increment the:</p>
+    <ol>
+      <li>
+        <img
+          src="../assets/starver_icon.svg"
+          class="starbucks-versioning-icon"
+        />
+        <b>venti</b> version when you make incompatible code changes,
+      </li>
+      <li>
+        <img
+          src="../assets/starver_icon.svg"
+          class="starbucks-versioning-icon"
+        />
+        <b>grande</b> version when you add functionality in a backwards
+        compatible manner, and
+      </li>
+      <li>
+        <img
+          src="../assets/starver_icon.svg"
+          class="starbucks-versioning-icon"
+        />
+        <b>tall</b> version when you make backwards compatible bug fixes.
+      </li>
+    </ol>
+    <p>
+      Additional labels for pre-release and build metadata are available as
+      extensions to the venti.grande.tall format.
+    </p>
+  </div>
+  <div class="introduction">
+    <h3>cool, but why?</h3>
+    <p>
+      every dev knows the situation of trying to fix a bug for a whole freaking
+      day. when you then suddenly are able to solve it (or declare it as a
+      feature), you are excited to merge it into production. <br />
+      but just as a grande update or tall? isn't that depressing? i mean, you
+      worked your ass off just for a "grande" update?!<br />
+      that's why i invented starbucks versioning (well, it's basically just
+      semantic versioning, but way better). now you didn't create a grande
+      update or tall, you created a <b>grande</b> or <b>tall</b> update! (cool,
+      eh?) this sounds way cooler and also boosts your motivation. when telling
+      your one friend that you merged a minor update into production, he'd
+      probably say "whatever", but if you tell him that you merged a
+      <b>grande</b> update into production, he'd probably say something like
+      "amazing! but why do you use italian words?"<br />
+      also, as a coffee lover (as every dev is, right?), the fancy-sounding
+      words <b>venti</b>, <b>grande</b> and <b>tall</b> are by far easier to
+      remember than those strange, english-sounding words major, minor and patch
+    </p>
+    <app-specification></app-specification>
+    <app-faq></app-faq>
+  </div>
+</div>
